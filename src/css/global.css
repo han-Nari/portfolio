@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-body);
+}
+
+.img {
+  width: min(80px, 15%);
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  font-size: var(--font-size-lg);
+  text-align: center;
+  font-weight: var(--font-weight-h);
+  padding-bottom: 1em;
+  color: var(--clr-light-a0);
+}
+
+.name {
+  color: var(--clr-primary-a0);
+  font-weight: var(--font-weight-h);
+}
+
+/* Wrapper Style */
+.wrapper {
+  width: min(1000px, 80%);
+  margin-inline: auto;
+}
+
+/* Wrapper Nav */
+.wrapper-nav {
+  width: min(1200px, 80%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5rem;
+}
+
+/* Wrapper Education */
+.wrapper-educ {
+  min-height: 70vh;
+  background-color: black;
+  color: #ffffff;
+  padding-block: 4em;
+}
+
+/* Skills */
+.wrapper-skills {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../assets//bg.webp") no-repeat center fixed;
+  background-size: cover;
+}
+
+.wrapper-skill {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
+  min-height: 30vh;
+  padding-block: 2em;
+}
+
+.wrapper-project {
+  background-color: black;
+  min-height: auto;
+  padding-block: 5em;
+}

@@ -1,0 +1,23 @@
+.skills {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2 {
+  position: relative;
+  color: #ffff00;
+}
+
+.h2:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background-color: var(--clr-light-a0);
+  display: block;
+  left: 0;
+  border-radius: 10px;
+}

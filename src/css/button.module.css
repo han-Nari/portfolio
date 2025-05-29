@@ -1,0 +1,71 @@
+.icon,
+.btn,
+.view,
+.source {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.icon {
+  display: none;
+}
+
+.btn {
+  font-size: var(--font-size-ssm);
+  width: fit-content;
+  color: var(--clr-light-a0);
+  background-color: var(--clr-primary-a10);
+}
+
+.btn,
+.view,
+.source {
+  padding: 0.5em 0.8em;
+  border: none;
+}
+
+.view,
+.source {
+  padding: 0.7em;
+  font-weight: var(--font-weight-h);
+  font-size: clamp(0.8rem, 2vw, 0.8rem);
+}
+
+.view {
+  background-color: #c7c714;
+}
+
+.view a {
+  color: var(--clr-dark-a0);
+}
+
+.source {
+  background-color: transparent;
+  border: 1px solid yellow;
+}
+
+.source a {
+  color: var(--clr-light-a0);
+}
+
+.source a:hover {
+  color: var(--clr-dark-a0);
+}
+
+.source:hover,
+.view:hover {
+  background-color: yellow;
+  color: var(--clr-dark-a0);
+}
+
+.btn:hover {
+  background-color: var(--clr-primary-a0);
+}
+
+@media (max-width: 500px) {
+  .icon {
+    display: block;
+  }
+}
