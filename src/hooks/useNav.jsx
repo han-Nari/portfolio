@@ -2,6 +2,10 @@ import { useRef } from "react";
 export default function useNav() {
   const linkRef = useRef();
 
+  const navLinks = ({ isActive }) => ({
+    color: isActive ? "green" : "white",
+  });
+
   function openNav() {
     if (linkRef.current) {
       linkRef.current.style.right = "0";
@@ -14,5 +18,5 @@ export default function useNav() {
     }
   }
 
-  return { linkRef, openNav, closeNav };
+  return { linkRef, openNav, closeNav, navLinks };
 }

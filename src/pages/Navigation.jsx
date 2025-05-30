@@ -3,18 +3,7 @@ import button from "../css/button.module.css";
 import useNav from "../hooks/useNav";
 
 export default function Navigation() {
-  const { linkRef, openNav, closeNav } = useNav();
-
-  const navLinks = document.querySelectorAll("a");
-
-  navLinks.forEach((item) => {
-    item.addEventListener("click", () => {
-      navLinks.forEach((item) => {
-        item.classList.remove("active");
-      });
-      item.classList.add("active");
-    });
-  });
+  const { linkRef, openNav, closeNav, navLinks } = useNav();
 
   return (
     <>
