@@ -4,7 +4,7 @@ import home from "../css/homepage.module.css";
 export default function Intro() {
   return (
     <>
-      <section className={home.heroSection}>
+      <section id="home" className={home.heroSection}>
         <p className={home.myName}>
           Hello, I am<span className="name"> Felix</span>
         </p>

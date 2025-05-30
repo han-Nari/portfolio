@@ -8,7 +8,7 @@
 
 .h2 {
   position: relative;
-  color: #ffff00;
+  color: var(--clr-green);
 }
 
 .h2:after {

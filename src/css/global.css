@@ -10,6 +10,13 @@ body {
   font-family: var(--font-family-body);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+.active {
+  color: var(--clr-green);
+}
+
 .img {
   width: min(80px, 15%);
   height: auto;
@@ -29,7 +36,7 @@ img {
 }
 
 .name {
-  color: var(--clr-primary-a0);
+  color: var(--clr-green);
   font-weight: var(--font-weight-h);
 }
 

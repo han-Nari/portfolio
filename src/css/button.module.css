@@ -16,7 +16,7 @@
   font-size: var(--font-size-ssm);
   width: fit-content;
   color: var(--clr-light-a0);
-  background-color: var(--clr-primary-a10);
+  background-color: #237e07;
 }
 
 .btn,
@@ -34,7 +34,7 @@
 }
 
 .view {
-  background-color: #c7c714;
+  background-color: var(--clr-light-a0);
 }
 
 .view a {
@@ -43,25 +43,21 @@
 
 .source {
   background-color: transparent;
-  border: 1px solid yellow;
+  border: 1px solid var(--clr-light-a0);
 }
 
 .source a {
   color: var(--clr-light-a0);
 }
 
-.source a:hover {
-  color: var(--clr-dark-a0);
-}
-
 .source:hover,
 .view:hover {
-  background-color: yellow;
-  color: var(--clr-dark-a0);
+  background-color: var(--clr-green);
 }
 
 .btn:hover {
-  background-color: var(--clr-primary-a0);
+  background-color: var(--clr-green);
+  color: var(--clr-light-a0);
 }
 
 @media (max-width: 500px) {

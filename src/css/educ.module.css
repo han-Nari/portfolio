@@ -9,7 +9,7 @@
   gap: 2rem;
   padding: 1em;
   justify-content: space-around;
-  border-left: 2px solid var(--clr-primary-a0);
+  border-left: 2px solid var(--clr-green);
 }
 
 .card .text {
@@ -18,8 +18,8 @@
 }
 
 .card .text h2 {
-  color: var(--clr-primary-a0);
   font-size: var(--font-size-sm);
+  color: var(--clr-green);
 }
 
 .card .text p {
@@ -32,7 +32,7 @@
 
 .h2 {
   position: relative;
-  color: var(--clr-primary-a0);
+  color: var(--clr-green);
 }
 
 .h2:after {

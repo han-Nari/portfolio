@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import nav from "../css/navigation.module.css";
 import button from "../css/button.module.css";
 import useNav from "../hooks/useNav";
@@ -6,8 +5,16 @@ import useNav from "../hooks/useNav";
 export default function Navigation() {
   const { linkRef, openNav, closeNav } = useNav();
 
-  const links = ({ isActive }) => ({
-    color: isActive ? "#5d27db" : "#ffffff",
+  const navLinks = document.querySelectorAll("a");
+  const navBar = document.querySelector("ul");
+
+  navLinks.forEach((item) => {
+    item.addEventListener("click", () => {
+      navLinks.forEach((item) => {
+        item.classList.remove("active");
+      });
+      item.classList.add("active");
+    });
   });
 
   return (
@@ -34,19 +41,18 @@ export default function Navigation() {
               </button>
             </li>
             <li>
-              <NavLink to="/" style={links}>
+              <a className="active" href="#home">
                 Home
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink to="/about" style={links}>
-                About
-              </NavLink>
+              <a href="#educ">Education</a>
             </li>
             <li>
-              <NavLink to="/contact" style={links}>
-                Contact
-              </NavLink>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#project">Project</a>
             </li>
           </ul>
           <button onClick={openNav} className={button.icon}>

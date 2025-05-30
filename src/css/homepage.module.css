@@ -17,10 +17,6 @@
   opacity: 0.9;
 }
 
-p {
-  width: fit-content;
-}
-
 main {
   color: white;
   display: flex;
@@ -41,4 +37,5 @@ main {
 mark {
   padding: 4px;
   font-weight: var(--font-weight-h);
+  background-color: lightgreen;
 }

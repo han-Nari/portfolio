@@ -1,0 +1,16 @@
+footer {
+  background-color: var(--clr-dark-a0);
+  min-height: 30vh;
+  color: var(--clr-light-a0);
+  padding-block: 2em;
+}
+
+.footer {
+  display: grid;
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}

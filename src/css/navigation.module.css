@@ -24,7 +24,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--clr-light-a0);
+  color: var(--clr-green);
 }
 
 .logo {
@@ -38,7 +38,7 @@ h3 {
 }
 
 h3 span {
-  color: var(--clr-primary-a10);
+  color: var(--clr-green);
 }
 
 @media (max-width: 500px) {

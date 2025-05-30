@@ -3,7 +3,7 @@ import educ from "../css/educ.module.css";
 export default function Education() {
   return (
     <>
-      <h2 className="title bottom">
+      <h2 id="educ" className="title bottom">
         <span className={educ.h2}>"Educational</span> Background
       </h2>
       <div className={educ.cards}>

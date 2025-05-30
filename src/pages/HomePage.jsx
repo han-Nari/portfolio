@@ -4,6 +4,7 @@ import Intro from "./Intro";
 import Education from "./Education";
 import Skills from "./Skills";
 import Project from "./Project";
+import Footer from "./Footer";
 
 export default function Homepage() {
   return (
@@ -35,6 +36,12 @@ export default function Homepage() {
           <Project />
         </div>
       </section>
+
+      <footer>
+        <div className="wrapper">
+          <Footer />
+        </div>
+      </footer>
     </>
   );
 }
