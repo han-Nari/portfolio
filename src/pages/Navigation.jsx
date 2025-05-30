@@ -6,7 +6,6 @@ export default function Navigation() {
   const { linkRef, openNav, closeNav } = useNav();
 
   const navLinks = document.querySelectorAll("a");
-  const navBar = document.querySelector("ul");
 
   navLinks.forEach((item) => {
     item.addEventListener("click", () => {

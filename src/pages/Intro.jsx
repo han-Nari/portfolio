@@ -1,5 +1,6 @@
 import button from "../css/button.module.css";
 import home from "../css/homepage.module.css";
+import cv from "../assets/Felix.pdf";
 
 export default function Intro() {
   return (
@@ -15,9 +16,10 @@ export default function Intro() {
           focused on sharpening my skills and exploring new technologies to grow
           as a developer.
         </p>
-        <button className={button.btn} role="button" type="button">
+
+        <a className={button.btn} href={cv} download>
           Download CV
-        </button>
+        </a>
       </section>
     </>
   );
